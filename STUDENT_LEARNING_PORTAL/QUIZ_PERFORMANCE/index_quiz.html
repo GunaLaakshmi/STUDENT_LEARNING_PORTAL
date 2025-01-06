@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Performance Prediction</title>
+    <link rel="stylesheet" href="styles_quiz.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Performance Prediction</h1>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="time_spent_modules">Time Spent on Modules (in minutes):</label>
+                <input type="number" id="time_spent_modules" name="time_spent_modules" step="any" required>
+            </div>
+
+            <div class="form-group">
+                <label for="device_type">Device Type:</label>
+                <select id="device_type" name="device_type" required>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Tablet">Tablet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="engagement_level">Engagement Level:</label>
+                <select id="engagement_level" name="engagement_level" required>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="participation_forums">Participation in Forums (number of posts):</label>
+                <input type="number" id="participation_forums" name="participation_forums" required>
+            </div>
+
+            <div class="form-group">
+                <label for="assignment_submissions">Assignment Submissions:</label>
+                <input type="number" id="assignment_submissions" name="assignment_submissions" required>
+            </div>
+
+            <button type="submit">Get Prediction</button>
+        </form>
+
+        <div id="predictionResult" class="result">
+            <span id="quizPerformanceAverage"></span>
+        </div>
+    </div>
+
+    <script src="script_quiz.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
