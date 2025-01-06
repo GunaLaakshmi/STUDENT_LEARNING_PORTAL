@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Engagement Prediction</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Engagement Prediction System</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enter Details to Predict Engagement</h2>
+            <form id="predictionForm">
+                <label for="login_frequency">Login Frequency:</label>
+                <input type="number" id="login_frequency" name="login_frequency" required>
+
+                <label for="time_spent_modules">Time Spent on Modules (hours):</label>
+                <input type="number" id="time_spent_modules" name="time_spent_modules" step="0.1" required>
+
+                <label for="participation_forums">Forum Participation:</label>
+                <input type="number" id="participation_forums" name="participation_forums" required>
+
+                <label for="quiz_performance_average">Quiz Performance Average:</label>
+                <input type="number" id="quiz_performance_average" name="quiz_performance_average" step="0.1" required>
+
+                <label for="assignment_submissions">Assignment Submissions:</label>
+                <input type="number" id="assignment_submissions" name="assignment_submissions" required>
+
+                <button type="submit">Predict Engagement</button>
+            </form>
+        </section>
+
+        <section id="result">
+            <h3>Predicted Engagement Level:</h3>
+            <p id="engagementLevel">Submit the form to see the prediction.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Student Engagement Prediction System</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
